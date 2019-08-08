@@ -13,16 +13,18 @@ Alternatively, it may be possible to install them using a package manager.
 
 TO BUID INX FROM SOURCE CODE use the below commands, The resulting executables can be found in build/release/src.
 
-sudo apt-get update
-sudo apt-get install build-essential gcc g++ git cmake libboost-all-dev git
-git clone https://github.com/inzider/INX
-cd INX
-chmod +x external/rocksdb/build_tools/build_detect_platform
-chmod +x external/rocksdb/build_tools/version.sh
-export CXXFLAGS="-std=gnu++11"
-export CXXFLAGS="-std=c++11"
-make
-(optinal you can run make -j 6 )
+$ sudo apt-get update
+$ sudo apt-get install build-essential gcc g++ git cmake libboost-all-dev git
+
+$ git clone https://github.com/inziderX/INX-MASTER.git
+$ cd INX
+
+RUN THIS COMMAND 
+$ chmod +x external/rocksdb/build_tools/build_detect_platform
+$ chmod +x external/rocksdb/build_tools/version.sh
+$ export CXXFLAGS="-std=gnu++11"
+$ export CXXFLAGS="-std=c++11"
+$ make - (optinal you can run make -j 6 )
 
 Advanced options:
 Parallel build: run `make -j<number of threads>' instead of `make'.
